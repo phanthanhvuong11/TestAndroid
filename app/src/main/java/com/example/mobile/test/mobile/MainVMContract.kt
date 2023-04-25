@@ -1,4 +1,4 @@
-package com.example.mobile.arch.test.mobile
+package com.example.mobile.test.mobile
 
 import com.example.mobile.model.Joke
 

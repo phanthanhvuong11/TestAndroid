@@ -1,4 +1,4 @@
-package com.example.mobile.arch.test.algorithm
+package com.example.mobile.test.algorithm
 
 class AlgorithmMiniMaxSum {
     /**

@@ -1,4 +1,4 @@
-package com.example.mobile.arch.test.mobile
+package com.example.mobile.test.mobile
 
 import android.os.Bundle
 import android.util.Log
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.mobile.R
 import com.example.mobile.arch.extension.setTextColorSpannableString
 import com.example.mobile.arch.extension.toast
-import com.example.mobile.arch.test.algorithm.AlgorithmMiniMaxSum
+import com.example.mobile.test.algorithm.AlgorithmMiniMaxSum
 import com.example.mobile.databinding.ActivityMainBinding
 import com.example.mobile.local.LocalRepository
 import java.net.HttpCookie

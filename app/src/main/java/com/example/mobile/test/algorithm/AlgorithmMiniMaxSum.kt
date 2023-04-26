@@ -11,6 +11,14 @@ class AlgorithmMiniMaxSum {
      **/
 
     fun main(args: List<Int>) {
+        /**
+         * val sum = args.sum()
+         * val max = args.max()
+         * val min = args.min()
+         * val maximum = sum - min
+         * val minimum = sum - max
+         * println("$minimum $maximum")
+         */
         if (args.isEmpty()) {
             println("List Empty")
         } else {

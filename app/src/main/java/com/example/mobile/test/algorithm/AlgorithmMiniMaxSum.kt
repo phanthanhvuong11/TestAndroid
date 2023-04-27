@@ -25,6 +25,7 @@ class AlgorithmMiniMaxSum {
             val sum = args.sum()
             val minimum = sum - findMax(args)
             val maximum = sum - findMin(args)
+            println("Simple input: $args")
             println("Simple output:$minimum $maximum")
         }
     }

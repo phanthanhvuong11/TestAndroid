@@ -27,17 +27,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/imgLogoCompany" />
 
-    <TextView
-        android:id="@+id/tvHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:gravity="end"
-        android:textColor="#b8b8b8"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@id/imgAvatar"
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="@id/imgAvatar"
         app:layout_constraintEnd_toStartOf="@id/imgAvatar"
-        app:layout_constraintTop_toTopOf="@id/imgAvatar" />
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/handicrafted_by_n_jim_hls"
+            android:textColor="#979797"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="end"
+            android:text="@string/handicrafted_by_hls"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ctHeader"
@@ -62,7 +76,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="@string/if_you_joke_wrong_way_your_teeth_have_to_pay_serious"
@@ -91,11 +105,13 @@
                 android:layout_height="0dp"
                 android:layout_marginHorizontal="20dp"
                 android:text="@string/company_description"
-                android:textColor="@color/black"
+                android:textColor="#747474"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="WebViewLayout" />
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="WebViewLayout"
+                tools:layout_editor_absoluteX="20dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
@@ -151,6 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="10dp"
+            android:textColor="#a1a1a1"
             android:text="@string/company_description"
             app:layout_constraintBottom_toTopOf="@id/tvCopyRight" />
 
@@ -160,7 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="@string/copyright_2021_hls"
-            android:textColor="@color/black"
+            android:textColor="#666666"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -26,25 +26,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-
-        initView()
         randomContentJoke(viewModel = viewModel)
         getCookie()
         initListener()
 
         //Build Algorithm
-        AlgorithmMiniMaxSum().main(listOf(1, 2, 3, 4, 5))
+        AlgorithmMiniMaxSum().main(listOf(1, 7, 3, 4, 9))
 
-    }
-
-    private fun initView() {
-        val titleHeader =
-            "${getString(R.string.handicrafted_by_n_jim_hls)} ${getString(R.string.handicrafted_by_hls)}"
-        binding?.tvHeader?.text = titleHeader.setTextColorSpannableString(
-            getString(R.string.handicrafted_by_n_jim_hls).length + 1,
-            titleHeader.length,
-            R.color.colorBlack
-        )
     }
 
     private fun initListener() {
